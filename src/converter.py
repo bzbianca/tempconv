@@ -28,7 +28,7 @@ def celsius_to_kelvin(c: float) -> float:
         raise ValueError(f"Temperature {c}°C is below absolute zero!")
     return c + 273.15
 
-    
+
 def kelvin_to_celsius(k: float) -> float:
     """Convert Kelvin to Celsius.
     Formula: k - 273.15
