@@ -1,12 +1,12 @@
 import pytest
-from src.converter import convert, celsius_to_fahrenheit, fahrenheit_to_celsius
+from src.converter import convert, celsius_to_fahrenheit
 
 @pytest.fixture
 def freezing_point_c_to_f(freezing_point):
     assert convert(freezing_point['C'], 'C', 'F') == freezing_point['F']
 
 
-def freezing_point_c_to_f(freezing_point):
+def freezing_point_c_to_k(freezing_point):
     """Returns the freezing point in all three units."""
     assert convert(freezing_point['C'], 'C', 'K') == freezing_point['K']
 
